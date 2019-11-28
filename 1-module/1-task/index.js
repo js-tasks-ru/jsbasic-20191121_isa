@@ -5,5 +5,11 @@
  * @returns {number}
  */
 function pow(m, n) {
-
+  m = parseInt(m);
+  n = parseInt(n);
+  if (!isFinite(m) || !isFinite(n) || n < 1) {
+    return null;
+  }
+  return Math.pow(m, n);
+  
 }
